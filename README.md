@@ -73,6 +73,19 @@ plt.bar(categories, values, color = "green")
 plt.show()
 ```
 
+You can also assign a color for each bar
+
+```
+displayColors = ['gray', 'green', 'gray', 'red']
+
+plt.bar(categories, values, color = displayColors)
+plt.show()
+```
+
+
+
+
+
 + The second option is the width of the bars (in case of bar function) or the height of the bars (in case of barh function):
 
 ```
