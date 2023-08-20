@@ -119,3 +119,39 @@ plt.xlabel("Categories", fontdict = font2)                      # let's include 
 plt.show()
 
 ```
+
+
+### Part5: displaying more than one plot
+
+The subplot() function enables multiple plots to be displayed in the layout of the output figure; the layout is arranged in a table format with rows and columns.
+
+The subplot() function accepts three parameters to describe the layout.
+
+The first argument represents the number of rows
+The second argument represents the number of columns
+The third argument represents the position in the layout
+
+
+```
+import matplotlib.pyplot as plt
+
+categories1 = ["First", "Second", "Third", "Forth"]
+values1 = [200, 150, 100, 250]
+plt.subplot(1, 2, 1)                #the layout is 1 row, 2 columns, and this plot is in the first position
+plt.bar(categories1, values1, color = "red", width = 0.7)
+plt.title("First plot")             #a title for this plot   
+plt.ylabel("first y-axis")        
+plt.xlabel("first x-axis") 
+
+
+categories1 = ["First", "Second", "Third", "Forth"]
+values1 = [200, 150, 100, 250]
+plt.subplot(1, 2, 2)                #the layout is 1 row, 2 columns, and this plot is in the second position
+plt.bar(categories1, values1, color = "green", width = 0.4)
+plt.title("Second plot")            #a title for this plot
+plt.ylabel("second y-axis")        
+plt.xlabel("second x-axis") 
+
+plt.suptitle("All plots")           #add one title on the collection
+plt.show()
+```
