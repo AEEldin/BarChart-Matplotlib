@@ -1,4 +1,4 @@
-# BarChart-Matplotlib
+# Bar Chart Matplotlib
 
 In this tutorial, we would like to create bar charts using Python's Matplotlib.
 
